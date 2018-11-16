@@ -1,0 +1,27 @@
+<html>
+   <head><script type="text/javascript" src="ejs_production.js"></script>
+   </head>
+<body>
+
+<table>
+    <tr>
+    <th>id</th>
+    <th>Product</th>
+    <th>Department</th>
+    <th>Price</th> 
+    <th>Quantity</th>
+  </tr>
+<% for(var i=0; i < rows.length; i++) { %>
+   <tr>
+     <td><%= rows[i].id %></td>
+     <td><%= rows[i].product_name %></td>
+     <td><%= rows[i].department_name %></td>
+     <td><%= rows[i].price %></td>
+     <td><%= rows[i].stock_quantity %></td>
+   </tr>
+<% } %>
+</table>
+
+
+</body>
+</html>
